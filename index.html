@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car7.com</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/4ee73db890.js" crossorigin="anonymous"></script>
+
+
+  	<!-- Rushi's owl carousel -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+  <style type="text/css">
+  	.box-shadow
+  	{
+  		box-shadow: 0px 2px 10px grey;
+  	}
+  	.div_hover
+  	{
+  		transition: all 0.5s ease;
+  	}
+  	.div_hover:hover
+  	{
+  		transform: scale(1.1);
+
+  	}
+  	footer
+  	{
+  		background-color: grey;
+  	}
+  	.about_img
+  	{
+  		background-image: url("https://wallpaperaccess.com/full/53441.jpg");
+  		background-attachment: fixed;
+  		background-size: cover;
+  	}
+  	.ht
+  	{
+  		height:200px;
+  	}
+
+
+  </style>
+
+ 
+</head>
+<body>
+	<!-- Navigation bar  -->
+	
+		
+		 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		  <div class="container-fluid">
+		  	 <a class="navbar-brand" href="#">
+      			<img src="logo.png" alt="" width="50" height="30">
+   			 </a>
+		    <a class="navbar-brand text-danger" href="#" >Car7</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarScroll">
+		      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#Featured">Featured Cars</a>
+		        </li>
+		        
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Category
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+		            <li><a class="dropdown-item" href="#mdcars">Mid Level</a></li>
+		            <li><a class="dropdown-item" href="#lcars">Luxury</a></li>
+		            
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#Buy">Buy</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#why_us">Why Us?</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#about">About Us</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contact">Contact Us</a>
+		        </li>
+		     
+		      </ul>
+		      <form class="d-flex">
+		        <input class="form-control me-2" type="search" placeholder="Search By Car Name" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+
+		<!-- Carousal start -->
+		
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  
+		  <div class="carousel-inner" >
+		    <div class="carousel-item active">
+		      <!-- img 1 --><img src="https://wallpapers.net/web/wallpapers/cars-drifting-hd-wallpaper/1280x720.jpg" class="d-block w-100 img-fluid" alt="..."> 
+		      <div class="carousel-caption d-none d-md-block bg-warning rounded">
+		      	<p class="slider-title text-dark h2">Buy in Easy Steps</p>
+		      	<p class="slider-text text-primary h3">Know Our Easy Steps & Buy A Car In Smooth Way</p>
+		      	<button class="btn btn-lg btn-success" >Know More</button>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <!-- img 2 --><img src="https://wallpaperaccess.com/full/6905979.jpg" class="d-block w-100 img-fluid" alt="...">
+		      <div class="carousel-caption d-none d-md-block bg-warning rounded">
+		      	<p class="slider-title text-dark h2">Middle Range Cars </p>
+		      	<p class="slider-text text-primary h3">Book Test Ride Of Your Dream Car!</p>
+		      	<button class="btn btn-lg btn-success">Book Now</button>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		     <!-- img 3 --> <img src="https://images.wallpapersden.com/image/download/audi-a8-4k-new_bWVqameUmZqaraWkpJRmZ21lrWxnZQ.jpg" class="d-block w-100 img-fluid" alt="...">
+		      <div class="carousel-caption d-none d-md-block bg-warning rounded">
+		      	<p class="slider-title text-dark h2">Luxury Cars</p>
+		      	<p class="slider-text text-primary h3">Book Test Ride Of Your Dream Luxury Car! And Experience Best Luxury</p>
+		      	<button class="btn btn-lg btn-success">Book Now</button>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		
+		
+
+		<!-- Featured products -->
+		
+		<!-- <section style="height:100vh" > -->
+		<div class="container p-5" id="Featured">
+			
+		<div class="row">
+			<h2 class="text-center mt-3 text-primary"><i><u>Featured Cars</u></i></h2>
+			<!-- card 1 -->
+			<div class="container col-md-3 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img src="https://www.carfitexperts.com/car-models/wp-content/uploads/2019/01/breeza-1-600x600.jpg" class="card-img-top img-fluid h-100" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Maruti Suzuki Brezza</h5>
+				    <p class="card-text text-capitalize">model-2019 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 8,000,00. <del> ₹ 8,500,00.</del></h6>
+				  </div>
+				  <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+				</div>
+			</div>
+
+			<!-- card 2 -->
+			<div class="container col-md-3 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img src="https://www.wheels97.com/tr:w-300,h-240,dpr-1/images/car-color-images/hyundai/hyundai-grand-i10-nios/typhoon-white_CoRAiR1ZV.jpg" class="card-img-top img-fluid h-100" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Hyundai Grand i10 Nios</h5>
+				    <p class="card-text text-capitalize">model-2017 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 5,000,00. <del> ₹ 6,000,00.</del></h6>
+				  </div>
+				  <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+				</div>
+			</div>
+
+			<!-- card 3 -->
+			<div class="container col-md-3 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img src="https://www.motoroids.com/wp-content/uploads/2014/05/New-Corolla-Altis-1200x848.jpg" class="card-img-top  img-fluid h-100" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Toyota Corolla Altis</h5>
+				    <p class="card-text text-capitalize">model-2016 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 3,500,00. <del> ₹ 4,000,00.</del></h6>
+				  </div>
+				  <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+				</div>
+			</div>
+
+			<!-- card 4 -->
+			<div class="container col-md-3 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img src="https://images.jdmagicbox.com/quickquotes/images_main/tata-tiago-1-2-revotron-xz-plus-pearlescent-white-107640126-3ucey.png" class="card-img-top img-fluid h-100" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Tata Tiago</h5>
+				    <p class="card-text text-capitalize">model-2020 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 6,500,00. <del> ₹ 7,000,00.</del></h6>
+				  </div>
+				  <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- </section> -->
+
+		<!-- Middle class cars -->
+		
+		<!-- Rushi's owl carousel -->	
+		<div class="container-fluid my-5 p-5" id="mdcars">
+        <h2 class="text-center mt-3 text-primary"><i><u>Middle Level Cars</u></i></h2>
+        <div class="row mt-5">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                	<!-- card 1 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/112947/wagon-r-2022-exterior-right-front-three-quarter-2.jpeg?isig=0" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Maruti suzuki wagon-r</h4>
+                                    <p class="card-text text-capitalize">model-2018 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 5,000,00. <del> ₹ 7,000,00.</del></h6>
+                                    
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://auto.economictimes.indiatimes.com/files/retail_files/elite-i20-1502362166-prod-var.png" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">hyundai i20</h4>
+                                     <p class="card-text text-capitalize">model-2015 | accidental |without records</p>
+                                    <h6 class="card-text">₹ 3,000,00. <del> ₹ 5,000,00.</del></h6>
+                               
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/47270/marutisuzuki-alto-exterior0.jpeg?wm=0" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class=" card-titletext-center text-capitalize">Maruti suzuki swift</h4>
+                                     <p class="card-text text-capitalize">model-2019 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 7,000,00. <del> ₹ 7,500,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://autohexa.com/wp-content/uploads/2020/02/tata-nexon-1.jpg" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">tata nexon</h4>
+                                     <p class="card-text text-capitalize">model-2020 | Not accidental |with all records</p>
+                                    <h6 class="card-text">₹ 10,000,00. <del> ₹ 12,000,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd-ct.aeplcdn.com/664x415/n/8pvj0sa_1458389.jpg?q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">mahindra xuv300</h4>
+                                     <p class="card-text text-capitalize">model-2018 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 7,000,00. <del> ₹ 8,500,00.</del></h6>
+                               
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd-ct.aeplcdn.com/1056x660/cw/ec/22037/Volkswagen-Polo-Exterior-95634.jpg?v=201711021421&wm=1&q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Volkswagen Polo</h4>
+                                     <p class="card-text text-capitalize">model-2013 | accidental |without records</p>
+                                    <h6 class="card-text">₹ 2,000,00. <del> ₹ 3,000,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/46891/jazz-exterior-right-front-three-quarter.jpeg" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">honda jazz</h4>
+                                     <p class="card-text text-capitalize">model-2017 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 6,500,00. <del> ₹ 7,000,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd-ct.aeplcdn.com/1056x660/n/m7ktr3a_1586563.jpg?q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">hyundai venue</h4>
+                                     <p class="card-text text-capitalize">model-2019 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 9,000,00. <del> ₹ 10,500,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- luxury class cars -->
+		
+		<!-- Rushi's owl carousel -->	
+		<div class="container-fluid my-5 p-5" id="lcars">
+        <h2 class="text-center mt-3 text-primary"><i><u>Luxury Cars</u></i></h2>
+        <div class="row mt-5">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                	<!-- card 1 -->
+                    <div class="item ">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd-ct.aeplcdn.com/1056x660/n/r4gdrsa_1477928.jpg?q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Jaguar XF Colours</h4>
+                                    <p class="card-text text-capitalize">model-2021 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 85,000,00. <del> ₹ 91,000,00.</del></h6>
+                                    
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd-ct.aeplcdn.com/1056x660/n/vjuri4a_1521687.jpg?q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">bmw 5 seires</h4>
+                                     <p class="card-text text-capitalize">model-2020 | accidental |without records</p>
+                                    <h6 class="card-text">₹ 63,000,00. <del> ₹ 65,000,00.</del></h6>
+                               
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://www.kindpng.com/picc/m/502-5024188_2019-audi-a6-vehicle-photo-in-houston-tx.png" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class=" card-titletext-center text-capitalize">audi a6</h4>
+                                     <p class="card-text text-capitalize">model-2021 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 67,000,00. <del> ₹ 68,500,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/45477/mercedesbenz-glc-coupe-right-front-three-quarter1.jpeg" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Mercedes-Benz GLC</h4>
+                                     <p class="card-text text-capitalize">model-2020 | Not accidental |with all records</p>
+                                    <h6 class="card-text">₹ 72,000,00. <del> ₹ 75,500,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/28188/lx-exterior-right-front-three-quarter.jpeg?isig=0&q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Lexus LX</h4>
+                                     <p class="card-text text-capitalize">model-2018 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 235,000,00. <del> ₹ 250,500,00.</del></h6>
+                               
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://www.mansory.com/sites/default/files/styles/1920x800_fullwidth_car_slider/public/2021-07/mansory-rolls-royce-ghost-my-2021-01.jpg?itok=-aQ6nXpw" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">rolls royce ghost</h4>
+                                     <p class="card-text text-capitalize">model-2021 | accidental |without records</p>
+                                    <h6 class="card-text">₹ 300,000,00. <del> ₹ 320,000,00.</del></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://imgd.aeplcdn.com/600x337/cw/ec/28085/Land-Rover-Range-Rover-Velar-Exterior-114227.jpg?wm=0&q=75" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Land Rover Velar</h4>
+                                     <p class="card-text text-capitalize">model-2017 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 85,500,00. <del> ₹ 88,000,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="https://wien.bentleymotors.com/picserver1/userdata/1/31595/3FAdVwEMPE/dws%20600x300%20moonbeam%20flying%20spur%20base.png" alt="" class="card-img-top ht">
+                            <div class="card-body">
+                                
+                                    <h4 class="card-title text-center text-capitalize">Bentley Flying Spur</h4>
+                                     <p class="card-text text-capitalize">model-2019 | Not accidental |clean records</p>
+                                    <h6 class="card-text">₹ 290,000,00. <del> ₹ 305,500,00.</del></h6>
+                                
+                            </div>
+                            <button href="#" class="btn btn-primary m-auto mb-3">Book Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+		
+
+    <!-- Rushi's owl carousel cdn's -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+
+		<!-- Buy in 3 easy steps -->
+
+		<!-- <section style="height:100vh" > -->
+		<div class="container p-5" id="Buy">
+			
+			<div class="row">
+				<h2 class="text-center mt-3 text-primary text-capitalize"><i><u>Buy in 3 easy steps</u></i></h2>
+				<!-- card 1 -->
+				<div class="container col-md-4 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img height="250px" src="https://www.cars24.com/blog/wp-content/uploads/2018/07/Webp.net-resizeimage-2.jpg" class="card-img-top  " alt="...">
+				  	<div class="card-body">
+				    <h5 class="card-title text-capitalize">Find The Perfect Car For You</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    
+				 	 </div>
+					</div>
+				</div>
+
+				<!-- card 2 -->
+				<div class="container col-md-4 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img height="250px" src="https://www.cars24.com/blog/wp-content/uploads/2018/07/used-car-selling-768x512.jpg" class="card-img-top  " alt="...">
+				  	<div class="card-body">
+				    <h5 class="card-title text-capitalize">Test Drive at home or a Car7 hub</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    
+				 	 </div>
+					</div>
+				</div>
+
+				<!-- card 3 -->
+				<div class="container col-md-4 col-sm-6 col-12 py-3">
+				<div class="card box-shadow h-100" >
+				  <img height="250px" src="https://www.shutterstock.com/image-vector/car-transport-truck-on-road-600w-348145103.jpg" class="card-img-top  " alt="...">
+				  	<div class="card-body">
+				    <h5 class="card-title text-capitalize">Buy it your way</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    
+				 	 </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- </section> -->
+
+		<!-- Why buy from us -->
+
+		<!-- <section style="height:100vh"> -->
+		<div class="container p-5 mb-5" id="why_us">
+			
+			<div class="row">
+				<h2 class="text-center mt-3 mb-5 text-primary"><i><u>Why buy from us</u></i></h2>
+				<!-- card 1 -->
+				<div class="container col-md-3 col-sm-6 col-12 div_hover py-3" >
+				<div class="card h-100" >
+				  <img height="150px"src="https://www.cars24.com/js/6f751a9d48793a9685f4a1313fed19ab.svg" class="card-img-top " alt="...">
+				  <div class="card-body">
+				  	<h5 class="card-title text-capitalize">Easy Financing Options</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+				</div>
+
+				<!-- card 2 -->
+				<div class="container col-md-3 col-sm-6 col-12 div_hover py-3" >
+				<div class="card h-100" >
+				  <img height="150px" src="https://www.cars24.com/js/72ee8594f9a2e0d3f78d675ff84c0333.svg" class="card-img-top " alt="...">
+				  <div class="card-body">
+				  	<h5 class="card-title text-capitalize">12-Month Warranty</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+				</div>
+
+				<!-- card 3 -->
+				<div class="container col-md-3 col-sm-6 col-12 div_hover py-3" >
+				<div class="card h-100" >
+				  <img height="150px" src="https://www.cars24.com/js/7f7b7d5596e5e520b606dd534be627b0.svg" class="card-img-top " alt="...">
+				  <div class="card-body">
+				  	<h5 class="card-title text-capitalize">Quality Checks</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+				</div>
+
+				<!-- card 4 -->
+				<div class="container col-md-3 col-sm-6 col-12 div_hover py-3" >
+				<div class="card h-100" >
+				  <img height="150px" src="https://www.cars24.com/js/bbbbd42860bbd47dabc26a2c8ead6905.svg" class="card-img-top " alt="...">
+				  <div class="card-body">
+				  	<h5 class="card-title text-capitalize">7-Day Return</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- </section> -->
+
+		<!-- About us -->
+
+		<!-- <section style="height:100vh"> -->
+		<div class="container p-5 mt-5 about_img" id="about">
+			
+			<div class="row">
+				<h2 class="text-center mb-5 mt-3 text-primary"><i><u>About Us</u></i></h2>
+				<div class="col-sm-4 col-12"><img src="https://cdn.mos.cms.futurecdn.net/f3CNpTqGSy2ajSps2dpSrn.jpg" class="img-fluid">
+				</div>
+				<div class="col-sm-8 col-12"><p class="text-justify text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-8 col-12">
+					<p class="text-justify text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+			
+			<div class="col-sm-4 col-12">
+				<img src="https://intloveincorporated.blob.core.windows.net/contentimages/main/car-key.jpg" class="img-fluid">
+			</div>
+			</div>
+		</div>
+		<!-- </section> -->
+
+		<!-- Contact US -->
+
+		<div class="container mt-5 p-5" id="contact">
+		  <h2 class="text-center mb-5 mt-3 text-primary"><i><u>Contact Us</u></i></h2>
+		  <div class="mt-4 p-5 bg-warning rounded">
+		    <h1>Get in Touch with Us</h1> 
+		    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+		    <div class="d-flex justify-content-center">
+		    <button type="button" href="#" class="btn btn-lg btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Inquiry Here</button></div>
+		  </div>
+		  
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+							  <div class="row">
+							    <div class="col">
+							    	<label for="inputAddress">First Name</label>
+							      <input type="text" class="form-control" placeholder="First name">
+							    </div>
+							    <div class="col">
+							    	<label for="inputAddress">Last Name</label>
+							      <input type="text" class="form-control" placeholder="Last name">
+							    </div>
+							  </div>
+
+
+								  <div class="form-row">
+								    <div class="form-group col-md-6">
+								      <label for="inputEmail4">Email</label>
+								      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <label for="inputPassword4">Password</label>
+								      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="inputAddress">Address</label>
+								    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+								  </div>
+								  
+								  <div class="form-row">
+								    <div class="form-group col-md-6">
+								      <label for="inputCity">City</label>
+								      <input type="text" class="form-control" id="inputCity">
+								    </div>
+								    <div class="form-group col-md-4">
+								      <label for="inputState">State</label>
+								      <select id="inputState" class="form-control">
+								        <option selected>Choose...</option>
+								        <option>Maharashtra</option>
+								        <option>Delhi</option>
+								        <option>Madhyapradesh</option>
+								        <option>Kerala</option>
+								        <option>Panjab</option>
+								        <option>karnataka</option>
+								        <option>Tamilnadu</option>
+								      </select>
+								    </div>
+								    <div class="form-group col-md-2">
+								      <label for="inputZip">Zip</label>
+								      <input type="text" class="form-control" id="inputZip">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="form-check">
+								      <input class="form-check-input" type="checkbox" id="gridCheck">
+								      <label class="form-check-label" for="gridCheck">
+								        Check me out
+								      </label>
+								    </div>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Sign in</button>
+								</form>
+							
+					      </div>
+					      
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+			<!-- Footer  -->
+
+			<footer class="text-light">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-12 mt-5">
+							
+							<img src="https://www.pngitem.com/pimgs/m/608-6080012_animated-car-transparent-background-hd-png-download.png" class="img-fluid rounded">
+						</div>
+						<div class="col-md-6 col-12">
+							
+							<h3>We In Top Cities</h3>
+							<hr>
+
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+							<div class="float-start p-3">
+							<p>Pune</p>
+							<p>Mumbai</p>
+							<p>Banglore</p>
+							<p>Chennai</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-12">
+							<h3 class="text-capitalize">Follow Us On Social Media</h3>
+							
+							<div class="">
+							<i class="fa-brands fa-facebook p-3 mt-5 fa-2xl" ></i>
+							<i class="fa-brands fa-instagram p-3 fa-2xl"></i>
+							<i class="fa-brands fa-twitter p-3 fa-2xl"></i>
+							<i class="fa-brands fa-whatsapp p-3 fa-2xl"></i>
+							</div>
+						
+						</div>
+						</div>
+					</div>
+				
+
+			</footer>
+
+			<!-- copyright -->
+			<div class="container-fluid bg-dark">
+				<div class="row">
+					<div class="col-md-12 text-center text-capitalize text-muted">Designed by mr.rushi shirke  <i class="fa-regular fa-copyright"></i>Copyright reserve to Mr.rushi shirke</div>
+				</div>
+			</div>
+
+		
+			
+
+</body>
+</html>
